@@ -51,6 +51,16 @@ A small, lightweight Windows app that lists every application currently producin
 5. Click **Remove Key** to remove the hotkey of an app. Pressing `Delete` or `Backspace` while assigning also clears it, and `Esc` cancels.
 
 > Tip: assigning a single key such as `9` with no modifier means that key is captured system-wide and will no longer type a `9` in other programs while the mixer is running. A combination like `Ctrl+9` avoids this.
+>
+> ## Download
+
+**[⬇️ Download the latest version](https://github.com/mNazligul/kuEsports-Sound-Adjuster/releases/latest)**
+
+1. Open the link above and download the `.exe` file under **Assets**.
+2. Run it. No installation needed.
+
+The `.exe` is not code-signed, so Windows SmartScreen may show an "Unknown publisher" warning the first time. Choose **More info → Run anyway**. Some antivirus programs may also give a false alarm for unsigned executables. You can always build the app yourself from the source code in this repository.
+
 
 ## How it connects to Windows
 
@@ -112,14 +122,6 @@ Settings are stored per user at:
 ```
 %AppData%\KuESportsSoundMixer\settings.json
 ```
-## Download
-
-**[⬇️ Download the latest version](https://github.com/mNazligul/kuEsports-Sound-Adjuster/releases/latest)**
-
-1. Open the link above and download the `.exe` file under **Assets**.
-2. Run it. No installation needed.
-
-The `.exe` is not code-signed, so Windows SmartScreen may show an "Unknown publisher" warning the first time. Choose **More info → Run anyway**. Some antivirus programs may also give a false alarm for unsigned executables. You can always build the app yourself from the source code in this repository.
 
 ## Build from source
 
