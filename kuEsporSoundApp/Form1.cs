@@ -58,8 +58,8 @@ public partial class Form1 : Form
 
         // Notification area (system tray)
         var trayMenu = new ContextMenuStrip();
-        trayMenu.Items.Add("Aç", null, (_, _) => ShowMainWindow());
-        trayMenu.Items.Add("Çıkış", null, (_, _) => { isRealExit = true; Close(); });
+        trayMenu.Items.Add("Open", null, (_, _) => ShowMainWindow());
+        trayMenu.Items.Add("Exit", null, (_, _) => { isRealExit = true; Close(); });
         notifyIcon = new NotifyIcon { Icon = Icon, Text = "kuE-sports sound mixer", ContextMenuStrip = trayMenu, Visible = true };
         notifyIcon.DoubleClick += (_, _) => ShowMainWindow();
 
@@ -214,7 +214,7 @@ public partial class Form1 : Form
             int newHotkeyId = nextHotkeyId++;
             if (!RegisterHotKey(Handle, newHotkeyId, windowsModifiers, (uint)key))
             {
-                row.AssignKeyButton.Text = "The key already in use on another app"; // another program already uses this hotkey
+                row.AssignKeyButton.Text = "Key in use"; // another program already uses this hotkey
                 return;
             }
             (row.HotkeyId, row.Key, row.Modifiers) = (newHotkeyId, key, modifiers);
