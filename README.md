@@ -37,7 +37,13 @@ A small, lightweight Windows app that lists every application currently producin
 1. Open the link above and download the `.zip` file under **Assets**.
 2. Extract it and run the `.exe`. No installation needed.
 
-The `.exe` is not code-signed, so Windows SmartScreen may show an "Unknown publisher" warning the first time. Choose **More info → Run anyway**. Some antivirus programs may also give a false alarm for unsigned executables. You can always build the app yourself from the source code in this repository.
+The `.exe` is not code-signed, so Windows SmartScreen may show an "Unknown publisher" warning the first time. Choose **More info → Run anyway**. Some antivirus programs may also give a false alarm for unsigned executables. You can always build the app yourself from the source code in this repository
+
+## Screenshot
+
+<p align="center">
+  <img width="364" alt="App screenshot" src="https://github.com/user-attachments/assets/14519155-ae26-4f9e-af83-f643fa54fcc6" />
+</p>
 
 ## Features
 
